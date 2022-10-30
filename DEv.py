@@ -9,7 +9,11 @@ CHANNEL_IDS = os.environ["CHANNEL_IDS"]
 
 IDS = CHANNEL_IDS.split(" ")
 
-SUDOS = SUDO.split(" ")
+SUDOE = SUDO.split(" ")
+
+SUDOS = []
+for x in SUDOE:
+    SUDOS.append(int(x))
 
 dev = Client(":logger:", api_id=ID, api_hash=HASH, bot_token=TOKEN)
 
