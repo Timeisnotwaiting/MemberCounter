@@ -9,11 +9,11 @@ CHANNEL_IDS = os.environ["CHANNEL_IDS"]
 
 IDS = []
 for y in CHANNEL_IDS:
-    IDS.append(y)
+    IDS.append(int(y))
 
 SUDOS = []
 for x in SUDO:
-    SUDOS.append(x)
+    SUDOS.append(int(x))
 
 dev = Client(":logger:", api_id=ID, api_hash=HASH, bot_token=TOKEN)
 
