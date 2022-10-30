@@ -29,7 +29,7 @@ async def z(_, m):
         async for c in _.get_chat_members(i):
             if c.user.is_bot:
                 BOTS.append(c.user.id)
-            elifif c.user.is_deleted:
+            elif c.user.is_deleted:
                 DELETED.append(c.user.id)
             else:
                 MEMBERS.append(c.user.id)
