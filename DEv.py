@@ -38,7 +38,7 @@ async def z(_, m):
     txt = ""
     for h in info:
         txt += "\n" + h["TITLE"] + "\n" + "Members :" + h["MEMBERS"] + "\n" + "Bots :" + h["BOTS"] + "\n" + "Deleted :" + h["DELETED"] + "\n"
-
+    print(txt)
     await m.reply(txt)
 
 dev.start()
