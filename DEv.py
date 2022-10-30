@@ -7,13 +7,9 @@ TOKEN = os.environ["BOT_TOKEN"]
 SUDO = os.environ["SUDO_USERS"]
 CHANNEL_IDS = os.environ["CHANNEL_IDS"]
 
-IDS = []
-for y in CHANNEL_IDS:
-    IDS.append((y))
+IDS = CHANNEL_IDS.split(" ")
 
-SUDOS = []
-for x in SUDO:
-    SUDOS.append(int(x))
+SUDOS = SUDO.split(" ")
 
 dev = Client(":logger:", api_id=ID, api_hash=HASH, bot_token=TOKEN)
 
