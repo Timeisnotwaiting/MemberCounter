@@ -17,7 +17,7 @@ for x in SUDO:
 
 dev = Client(":logger:", api_id=ID, api_hash=HASH, bot_token=TOKEN)
 
-@dev.on_message(filters.command("getinfo") & filters.user(SUDOS))
+@dev.on_message(filters.command("getinfo"))
 async def z(_, m):
     info = []
     for i in IDS:
