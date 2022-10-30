@@ -37,7 +37,10 @@ async def z(_, m):
         info.append(s)
     txt = ""
     for h in info:
-        txt += "\n" + h["TITLE"] + "\n" + "Members :" + h["MEMBERS"] + "\n" + "Bots :" + h["BOTS"] + "\n" + "Deleted :" + h["DELETED"] + "\n"
+        txt += "\n" + h["TITLE"] + "\n"
+        txt += "• Members : " + h["MEMBERS"] + "\n"
+        txt += "• Bots : " + h["BOTS"] + "\n"
+        txt += "• Deleted : " + h["DELETED"] + "\n"
     print(txt)
     await m.reply(txt)
 
