@@ -29,7 +29,7 @@ async def z(_, m):
                 DELETED.append(c.user.id)
             else:
                 MEMBERS.append(c.user.id)
-            s = {"TITLE": title, "MEMBERS": len(MEMBERS), "BOTS": len(BOTS), "DELETED": len(DELETED)}
+            s = {"TITLE": title, "MEMBERS": str(len(MEMBERS)), "BOTS": str(len(BOTS)), "DELETED": str(len(DELETED))}
             info.append(s)
     txt = ""
     for h in info:
