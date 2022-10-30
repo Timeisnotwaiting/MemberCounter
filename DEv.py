@@ -9,7 +9,7 @@ CHANNEL_IDS = os.environ["CHANNEL_IDS"]
 
 IDS = []
 for y in CHANNEL_IDS:
-    IDS.append(int(y))
+    IDS.append((y))
 
 SUDOS = []
 for x in SUDO:
